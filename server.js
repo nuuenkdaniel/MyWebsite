@@ -1,11 +1,14 @@
 const express = require("express");
+const path = require("path");
 const app = express();
-const port = 8080;
+const port = 3000;
 
 app.set("view engine", "ejs");
 
+app.use(express.urlencoded({ extended: true }));
+
 app.get("/home", (req, res) => {
-  res.send("Home Page");
+  res.sendFile(__dirname + "/views/home.html");
 });
 
 app.use((req, res) => {

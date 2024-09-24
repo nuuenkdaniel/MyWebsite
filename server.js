@@ -1,8 +1,16 @@
-const express = require('express');
+const express = require("express");
 const app = express();
+const port = 8080;
 
-app.get('/', (req, res) => {
-  res.send('hello world');
+app.set("view engine", "ejs");
+
+app.get("/home", (req, res) => {
+  res.send("Home Page");
 });
 
-console.log("Server running on port 3000");
+app.use((req, res) => {
+  res.redirect("/home");
+});
+
+app.listen(port);
+console.log("MyWebsite server running on port " + port);

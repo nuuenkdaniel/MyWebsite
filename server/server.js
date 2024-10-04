@@ -15,5 +15,4 @@ app.use((req, res) => {
   res.redirect("/home");
 });
 
-app.listen(port);
-console.log("MyWebsite server running on port " + port);
+app.listen(port, () => { console.log("MyWebsite server running on port " + port) });

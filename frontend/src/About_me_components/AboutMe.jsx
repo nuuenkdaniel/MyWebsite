@@ -3,7 +3,7 @@ import React from 'react';
 export function AboutMe() {
   return (
     <div className="container">
-      <h1>About Me</h1>
+      <h1><u>About Me</u></h1>
       <div className="about_me_text">
         <p>
           I am a sophmore at Stony Brook University majoring in CS. I like to do fun projects

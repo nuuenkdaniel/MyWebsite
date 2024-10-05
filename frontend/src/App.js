@@ -5,10 +5,9 @@ import { AboutMe } from "./About_me_components/AboutMe";
 
 function App() {
   return (
-    <Fragment>
+    <>
         <AboutMe />
-      <p>Hello</p>
-    </Fragment>
+    </>
   );
 }
 

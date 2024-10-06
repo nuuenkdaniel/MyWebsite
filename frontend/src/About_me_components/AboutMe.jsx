@@ -2,7 +2,7 @@ import React from 'react';
 
 export function AboutMe() {
   return (
-    <div className="container">
+    <div className="container border-bottom">
       <h1><u>About Me</u></h1>
       <div className="about_me_text">
         <p>
